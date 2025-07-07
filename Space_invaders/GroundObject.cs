@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Space_invaders
 {
-	internal class Program
+	class GroundObject : GameObject
 	{
-		static void Main(string[] args)
-		{
-
-		}
 	}
 }

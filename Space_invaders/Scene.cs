@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Space_invaders
 {
-	internal class Program
+	class Scene
 	{
-		static void Main(string[] args)
-		{
 
-		}
 	}
 }

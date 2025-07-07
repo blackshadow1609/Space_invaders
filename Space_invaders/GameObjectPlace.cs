@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Space_invaders
 {
-	internal class Program
+	class GameObjectPlace
 	{
-		static void Main(string[] args)
-		{
+		public int Xcoordinate {  get; set; }
 
-		}
+		public int Ycoordinate {  get; set; }
+
 	}
 }

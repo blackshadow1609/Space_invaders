@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlienShip.cs" />
+    <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjectPlace.cs" />
+    <Compile Include="GameObjectType.cs" />
+    <Compile Include="GroundObject.cs" />
+    <Compile Include="PlayerShip.cs" />
+    <Compile Include="PlayerShipMissile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
