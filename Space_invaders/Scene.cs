@@ -19,15 +19,19 @@ namespace Space_invaders
 		{
 			
 		}
-		public static Scene GetScene()
+
+		private Scene(GameSettings gameSettings)
+		{
+			
+		}
+		public static Scene GetScene(GameSettings gameSettings)
 		{
 			if (_scene == null)
 			{
-
+				_scene = new Scene(gameSettings);
 			}
 
 			return _scene;
 		}
-
 	}
 }

@@ -43,14 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlienShip.cs" />
-    <Compile Include="GameObject.cs" />
-    <Compile Include="GameObjectPlace.cs" />
-    <Compile Include="GameObjectType.cs" />
+    <Compile Include="GameObjectFactories\AlienShipFactory.cs" />
+    <Compile Include="GameObjectFactories\GameObjectFactory.cs" />
+    <Compile Include="GameObjects\AlienShip.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\GameObjectPlace.cs" />
+    <Compile Include="GameObjects\GameObjectType.cs" />
     <Compile Include="GameSettings.cs" />
-    <Compile Include="GroundObject.cs" />
-    <Compile Include="PlayerShip.cs" />
-    <Compile Include="PlayerShipMissile.cs" />
+    <Compile Include="GameObjects\GroundObject.cs" />
+    <Compile Include="GameObjects\PlayerShip.cs" />
+    <Compile Include="GameObjects\PlayerShipMissile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scene.cs" />
@@ -58,5 +60,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
