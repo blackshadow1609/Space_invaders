@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="GameObjectFactories\AlienShipFactory.cs" />
     <Compile Include="GameObjectFactories\GameObjectFactory.cs" />
+    <Compile Include="GameObjectFactories\GroundFactory.cs" />
+    <Compile Include="GameObjectFactories\PlayerShipFactory.cs" />
     <Compile Include="GameObjects\AlienShip.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\GameObjectPlace.cs" />

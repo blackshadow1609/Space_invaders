@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Space_invaders.GameObjectFactories
+namespace Space_invaders
 {
 	class AlienShipFactory : GameObjectFactory
 	{
@@ -16,12 +16,8 @@ namespace Space_invaders.GameObjectFactories
 
 		public override GameObject GetGameObject(GameObjectPlace objectPlace)
 		{
-			GameObject alienShip = new AlienShip() 
-			{
-				Figure = GameSettings.AlienShip, 
-				GameObjectPlace	= objectPlace, 
-				GameObjectType = GameObjectType.AlienShip
-			};
+			GameObject alienShip = new AlienShip() { Figure = GameSettings.AlienShip, GameObjectPlace = objectPlace, GameObjectType = GameObjectType.AlienShip };
+
 			return alienShip;
 		}
 		public List<GameObject> GetSwarm()
@@ -35,11 +31,14 @@ namespace Space_invaders.GameObjectFactories
 			{
 				for (int x = 0; x < GameSettings.NumberOfSwarmColls; x++)
 				{
-					GameObjectPlace gamePlace = new GameObjectPlace() { XCoordinate = startX + x, YCoordinate = startY + y };
+					GameObjectPlace objectPlace = new GameObjectPlace() { Xcoordinate = startX + x, Ycoordinate = startY + y };
 
-					GameObject alienShip = GetGameObject
+					GameObject alienShip = GetGameObject(objectPlace);
+					swarm.Add(alienShip); 
 				}
 			}
+
+			return swarm;
 		}
 	}
 }

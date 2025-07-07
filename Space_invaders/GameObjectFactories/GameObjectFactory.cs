@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Space_invaders.GameObjectFactories				//Не забыть убрать если вдруг
+namespace Space_invaders				//.GameObjectFactories				//Не забыть убрать если вдруг
 {
 	abstract class GameObjectFactory
 	{

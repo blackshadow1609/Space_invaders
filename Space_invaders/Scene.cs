@@ -12,6 +12,7 @@ namespace Space_invaders
 		List<GameObject>	_ground;
 		GameObject			_playerShip;
 		List<GameObject>	_playerShipMissile;
+		GameSettings		_gameSettings;
 
 		private static Scene _scene;
 
@@ -22,7 +23,10 @@ namespace Space_invaders
 
 		private Scene(GameSettings gameSettings)
 		{
-			
+			_gameSettings = gameSettings;
+			_swarm = new AlienShipFactory(_gameSettings).GetSwarm();
+			_ground = new GroundFactory(_gameSettings).GetGround();
+
 		}
 		public static Scene GetScene(GameSettings gameSettings)
 		{
