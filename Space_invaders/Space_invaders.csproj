@@ -47,6 +47,7 @@
     <Compile Include="GameObjectFactories\GameObjectFactory.cs" />
     <Compile Include="GameObjectFactories\GroundFactory.cs" />
     <Compile Include="GameObjectFactories\PlayerShipFactory.cs" />
+    <Compile Include="GameObjectFactories\PlayerShipMissileFactory.cs" />
     <Compile Include="GameObjects\AlienShip.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\GameObjectPlace.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scene.cs" />
+    <Compile Include="SceneRender.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

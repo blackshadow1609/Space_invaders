@@ -11,12 +11,17 @@ namespace Space_invaders
 		public AlienShipFactory(GameSettings gameSettings)
 			: base(gameSettings)
 		{
-			
+
 		}
 
 		public override GameObject GetGameObject(GameObjectPlace objectPlace)
 		{
-			GameObject alienShip = new AlienShip() { Figure = GameSettings.AlienShip, GameObjectPlace = objectPlace, GameObjectType = GameObjectType.AlienShip };
+			GameObject alienShip = new AlienShip()
+			{
+				Figure = GameSettings.AlienShip,
+				GameObjectPlace = objectPlace,
+				GameObjectType = GameObjectType.AlienShip
+			};
 
 			return alienShip;
 		}
@@ -31,10 +36,14 @@ namespace Space_invaders
 			{
 				for (int x = 0; x < GameSettings.NumberOfSwarmColls; x++)
 				{
-					GameObjectPlace objectPlace = new GameObjectPlace() { Xcoordinate = startX + x, Ycoordinate = startY + y };
+					GameObjectPlace objectPlace = new GameObjectPlace()
+					{
+						Xcoordinate = startX + x,
+						Ycoordinate = startY + y
+					};
 
 					GameObject alienShip = GetGameObject(objectPlace);
-					swarm.Add(alienShip); 
+					swarm.Add(alienShip);
 				}
 			}
 

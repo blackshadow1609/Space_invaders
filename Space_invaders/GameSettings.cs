@@ -8,17 +8,17 @@ namespace Space_invaders
 {
 	class GameSettings
 	{
-		public int ConsoleWidth { get; set; } = 80;					//Размер окна консоли
+		public int ConsoleWidth { get; set; } = 80;                 //Размер окна консоли
 		public int ConsoleHight { get; set; } = 30;
 
 		//------------------------------------------------------------------------------------------------------------------
-		public int NumberOfSwarmRows { get; set; } = 2;				//Количество рядов кораблей
-		public int NumberOfSwarmColls { get; set; } = 60;			//Количество кораблей в 1 ряду
+		public int NumberOfSwarmRows { get; set; } = 2;             //Количество рядов кораблей
+		public int NumberOfSwarmColls { get; set; } = 60;           //Количество кораблей в 1 ряду
 
 		public int SwarmStartXCoordinate { get; set; } = 10;        //Координаты первоначального положения по ширине
 		public int SwarmStartYCoordinate { get; set; } = 2;         //Координаты первоначального положения по высоте
 
-		public char AlienShip { get; set; } = 'O';					//Символ кораблей пришельцев
+		public char AlienShip { get; set; } = 'O';                  //Символ кораблей пришельцев
 		public int SwarmSpeed { get; set; } = 20;                   //Скорость перемещения кораблей пришельцев
 
 		//------------------------------------------------------------------------------------------------------------------

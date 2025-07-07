@@ -17,7 +17,12 @@ namespace Space_invaders
 
 		public override GameObject GetGameObject(GameObjectPlace objectPlace)
 		{
-			GameObject groundObject = new GroundObject() { Figure = GameSettings.Ground, GameObjectPlace = objectPlace, GameObjectType = GameObjectType.GroundObject };
+			GameObject groundObject = new GroundObject()
+			{
+				Figure = GameSettings.Ground,
+				GameObjectPlace = objectPlace,
+				GameObjectType = GameObjectType.GroundObject
+			};
 
 			return groundObject;
 		}
@@ -32,7 +37,11 @@ namespace Space_invaders
 			{
 				for (int x = 0; x < GameSettings.NumberOfGroundColls; x++)
 				{
-					GameObjectPlace objectPlace = new GameObjectPlace() { Xcoordinate = startX + x, Ycoordinate = startY + y };
+					GameObjectPlace objectPlace = new GameObjectPlace()
+					{
+						Xcoordinate = startX + x,
+						Ycoordinate = startY + y
+					};
 
 					GameObject groundObject = GetGameObject(objectPlace);
 					ground.Add(groundObject);
