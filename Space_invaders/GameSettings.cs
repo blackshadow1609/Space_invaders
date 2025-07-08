@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Space_invaders
+namespace Space_invaders 
 {
 	class GameSettings
 	{

@@ -12,33 +12,36 @@ namespace Space_invaders
 
 		private static GameEngine _gameEngine;
 
+		private SceneRender _sceneRender;
+
 		private Scene _scene;
 
 		public GameEngine()
 		{
-			
+
 		}
 
-		public static GameEngine GetGameEngine()
+		public static GameEngine GetGameEngine(GameSettings gameSettings)
 		{
 			if (_gameEngine == null)
 			{
 				_gameEngine = new GameEngine(gameSettings);
 			}
-			return _gameEngine;	
+			return _gameEngine;
 		}
 
 		private GameEngine(GameSettings gameSettings)
 		{
 			_isNotOwer = true;
 			_scene = Scene.GetScene(gameSettings);
+			_sceneRender = new SceneRender(gameSettings);
 		}
 
 		public void Run()
 		{
 			do
 			{
-
+				_sceneRender.Render(_scene);
 			}
 			while (_isNotOwer);
 		}
