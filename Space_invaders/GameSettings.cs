@@ -9,7 +9,7 @@ namespace Space_invaders
 	class GameSettings
 	{
 		public int ConsoleWidth { get; set; } = 80;                 //Размер окна консоли
-		public int ConsoleHight { get; set; } = 30;
+		public int ConsoleHeight { get; set; } = 30;
 
 		//------------------------------------------------------------------------------------------------------------------
 		public int NumberOfSwarmRows { get; set; } = 2;             //Количество рядов кораблей

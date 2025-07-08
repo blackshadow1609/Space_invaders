@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameEngine.cs" />
     <Compile Include="GameObjectFactories\AlienShipFactory.cs" />
     <Compile Include="GameObjectFactories\GameObjectFactory.cs" />
     <Compile Include="GameObjectFactories\GroundFactory.cs" />
